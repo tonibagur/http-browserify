@@ -19,7 +19,7 @@ http.request = function (params, cb) {
         if (params.scheme) {
             params.protocol = params.scheme + ':';
         } else {
-            params.protocol = window.location.protocol;
+            params.protocol = 'http:';
         }
     }
 
